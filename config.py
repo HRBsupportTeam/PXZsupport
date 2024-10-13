@@ -66,26 +66,7 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 BOT_STATS_TEXT = "<b>ʙᴏᴛ ᴜᴘᴛɪᴍᴇ</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!"
 
-#Payment to remove the token system
-#put TRUE if you want this feature
-USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "true") == "TRUE" else False) and (USE_SHORTLINK) else False
-#UPI ID
-UPI_ID = os.environ.get("UPI_ID", " ")
-#UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://saweria.co/widgets/qr?streamKey=b80f98fe9f140df185ebfc1de85c4d26")
-#SCREENSHOT URL of ADMIN for verification of payments
-SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
-#Time and its price
-#7 Days
-PRICE1 = os.environ.get("PRICE1", "1$|10k")
-#1 Month
-PRICE2 = os.environ.get("PRICE2", "2.5$|25k")
-#3 Month
-PRICE3 = os.environ.get("PRICE3", "5$|50k")
-#6 Month
-PRICE4 = os.environ.get("PRICE4", "10$|100k")
-#1 Year
-PRICE5 = os.environ.get("PRICE5", "15$|150k")
+
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5709856741)
