@@ -30,6 +30,7 @@ elif data == "media":
                 [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ', url='https://px-z.blogspot.com'),
                 InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
                  InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029Vaj27FHLo4hWYvLaUM00')],
+                [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ]
                 )
         )
@@ -41,6 +42,7 @@ elif data == "shop":
                 [
                  InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='https://t.me/HRBstore_official'),
                  InlineKeyboardButton('🚪 ɢʀᴏᴜᴘ ', url='https://t.me/+lasI21TGYKFmODk1')],
+                [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ]
                 )
         )
@@ -53,7 +55,8 @@ elif data == "menu":
                 [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
                  InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
               [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
-              InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")]
+              InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")],
+                [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                  
             ]
                 )
