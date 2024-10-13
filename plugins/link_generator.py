@@ -55,6 +55,7 @@ async def link_generator(client: Client, message: Message):
             continue
 
     base64_string = await encode(f"get-{msg_id * abs(client.db_channel.id)}")
-    link = f"https://t.me/{client.username}?start={base64_string}"
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ꜱʜᴀʀᴇ ᴜʀʟ ↗️", url=f'https://telegram.me/share/url?url={link}')]])
-    await channel_message.reply_text(f"<b>ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʟɪɴᴋ</b>\n\n{link}", quote=True, reply_markup=reply_markup)
+    #link = f"https://t.me/{client.username}?start={base64_string}"
+    link = f"https://kuttyfile.storebot.workers.dev?start={base64_string}"
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"ꜱʜᴀʀᴇ ᴜʀʟ ↗️", url=f'https://telegram.me/share/url?url={link}')]])
+    await channel_message.reply_text(f"<b>🧑‍💻 Here is your code : \n<code>{base64_string}</code></b>\n\n<b>🔗 Here is your link : </b>\n{link}", quote=True, reply_markup=reply_markup)
