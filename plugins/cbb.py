@@ -22,6 +22,41 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
+
+elif data == "media":
+        await query.message.edit_text(
+            text = f"<b>ᴍᴇɴᴜ ᴍᴇᴅɪᴀ\nꜰᴏʟʟᴏᴡ ᴜꜱ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ",disable_web_page_preview = True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ', url='https://px-z.blogspot.com'),
+                InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
+                 InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029Vaj27FHLo4hWYvLaUM00')],
+                )
+        )
+
+elif data == "shop":
+        await query.message.edit_text(
+            text = f"<b>ᴍᴇɴᴜ ꜱʜᴏᴘ\nʏᴏᴜ ᴡᴀɴᴛ ʙᴜʏ ᴠɪᴘ?, ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴ ɪɴ ʙᴇʟᴏᴡ",disable_web_page_preview = True,
+            reply_markup=InlineKeyboardMarkup([
+                [
+                 InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='https://t.me/HRBstore_official'),
+                 InlineKeyboardButton('🚪 ɢʀᴏᴜᴘ ', url='https://t.me/+lasI21TGYKFmODk1')],
+                )
+        )
+
+
+elif data == "menu":
+        await query.message.edit_text(
+            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ",disable_web_page_preview = True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
+                 InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
+              [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
+              InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate"),],
+                 
+            ]
+                )
+        )
+    
     elif data == "donate":
         await query.message.edit_text(
             text = f"<b>DONATE - PXZFamily</b>\nJika kalian suka sama video yang kami bagikan secara gratis/bayaran, ingin berbagi (donasi) kepada PXZteam? Silahkan pilih via donasi\n If you like the videos we share for free/paid, want to share (donate) to PXZteam? Please choose via donation",
