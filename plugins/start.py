@@ -83,11 +83,11 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data= "menu"),
+                [InlineKeyboardButton("🪪 ᴀʙᴏᴜᴛ", callback_data="developer")],
+                    [InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data = "menu"),
+                    
                     InlineKeyboardButton("🎁 ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
-                [InlineKeyboardButton('📣 ᵁᴾᴰᴬᵀᴱᴰ ', url='https://t.me/HRBsupport_official')]
+                [InlineKeyboardButton('📣 ᴜᴘᴅᴀᴛᴇ ', url='https://t.me/HRBsupport_official')]
                  
                 
             ]
