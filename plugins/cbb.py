@@ -74,7 +74,8 @@ elif data == "menu":
                 [InlineKeyboardButton('📤 ᴜᴘʟᴏᴀᴅᴇᴅ', url='https://t.me/HRBpay')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
-            ])            
+            ]
+                                             )            
         )
     elif data == "premium":
         await query.message.edit_text(
@@ -86,7 +87,8 @@ elif data == "menu":
                 [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/HonorsTeam')],
                 [InlineKeyboardButton('📤 ᴜᴘʟᴏᴀᴅᴇᴅ', url='https://t.me/HRBpay')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
-            ])            
+            ]
+                                             )            
         )
     elif data == "promotion":
         await query.message.edit_text(
@@ -97,7 +99,8 @@ elif data == "menu":
                 InlineKeyboardButton('📤 ᴜᴘʟᴏᴀᴅᴇᴅ', url='https://t.me/HRBpromotion')],
                 [
                 InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
-            ])            
+            ]
+                                             )            
     )
         
     elif data == "close":
