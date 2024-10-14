@@ -22,7 +22,18 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-
+elif data == "media":
+        await query.message.edit_text(
+            text = f"<b>ᴍᴇɴᴜ ᴍᴇᴅɪᴀ\nꜰᴏʟʟᴏᴡ ᴜꜱ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ</b>",
+            disable_web_page_preview = True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ', url='https://px-z.blogspot.com'),
+                InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
+                 InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029Vaj27FHLo4hWYvLaUM00')],
+                [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
+            ]
+                )
+)
 
 
 elif data == "shop":
