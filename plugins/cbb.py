@@ -25,7 +25,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             )
         )
 
-    elif data == "MEDIA":
+    elif data == "media":
         await query.message.edit_text(
             text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nꜰᴏʟʟᴏᴡ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ</blockquote>",
             disable_web_page_preview=True,
