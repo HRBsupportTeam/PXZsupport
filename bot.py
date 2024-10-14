@@ -76,16 +76,6 @@ class Bot(Client):
             self.LOGGER(__name__).info("\nʙᴏᴛ ꜱᴛᴏᴘᴘᴇᴅ. ᴊᴏɪɴ https://t.me/HRBsupport ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ")
             sys.exit()
 
-         initadmin = await full_adminbase()
-        for x in initadmin:
-            if x in ADMINS:
-                continue
-            ADMINS.append(x)
-        await self.send_message(
-            chat_id=OWNER_ID,
-            text="Bot has started! 😉"
-        )
-
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/HRBsupport")
         self.LOGGER(__name__).info(f"""\n\n
