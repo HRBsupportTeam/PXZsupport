@@ -25,7 +25,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
 elif data == "media":
         await query.message.edit_text(
-            text = f"<b>ᴍᴇɴᴜ ᴍᴇᴅɪᴀ\nꜰᴏʟʟᴏᴡ ᴜꜱ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ",disable_web_page_preview = True,
+            text = f"<b>ᴍᴇɴᴜ ᴍᴇᴅɪᴀ\nꜰᴏʟʟᴏᴡ ᴜꜱ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ",
+            disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ', url='https://px-z.blogspot.com'),
                 InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
@@ -50,11 +51,12 @@ elif data == "shop":
 
 elif data == "menu":
         await query.message.edit_text(
-            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ",disable_web_page_preview = True,
+            text = f"<b>ᴍᴇɴᴜ ꜰᴇᴀᴛᴜʀᴇᴅ",
+            disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🛒 ᴘʀᴏᴍᴏᴛɪᴏɴ ", callback_data="shop"),
-                 InlineKeyboardButton('💰 ꜱᴛᴏʀᴇ ', url='promotion')],
-              [InlineKeyboardButton('🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ', url='premium'),
+                 InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data="promotion")],
+              [InlineKeyboardButton("🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ", callback_data="premium"),
               InlineKeyboardButton("⚖️ ᴅᴏɴᴀᴛᴇ ", callback_data="donate")],
                 
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
