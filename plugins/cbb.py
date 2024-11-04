@@ -14,12 +14,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📲ꜰᴏʟʟᴏᴡ ᴜꜱ ", callback_data="media")
-                 ],
+                    [InlineKeyboardButton("📲ꜰᴏʟʟᴏᴡ ᴜꜱ ", callback_data="media"),
+                 InlineKeyboardButton('🧾 ᴅᴏɴᴀᴛᴇ', callback_data='donate')],
               [InlineKeyboardButton("🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ", callback_data="premium"),
               InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data="promotion",)],
                     [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ ', url='https://px-z.blogspot.com')],
-                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
+                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "back")]
                 
                 ]
             )
