@@ -1,14 +1,18 @@
-import os
 import asyncio
-from pyrogram import Client, filters, __version__
+import os
+import random
+import sys
+import time
+import string
+from pyrogram import Client, filters
 from pyrogram.enums import ParseMode
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 
 from bot import Bot
-from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
-from helper_func import subscribed, encode, decode, get_messages
-from database.database import add_user, del_user, full_userbase, present_user
+from config import ADMINS, CHANNEL_ID, FORCE_MSG, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, OWNER_TAG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, OWNER_ID, SHORTLINK_API_URL, SHORTLINK_API_KEY, USE_PAYMENT, USE_SHORTLINK, VERIFY_EXPIRE, TIME, TUT_VID, U_S_E_P
+from helper_func import encode, get_readable_time, increasepremtime, subscribed, subscribed2, decode, get_messages, get_shortlink, get_verify_status, update_verify_status, get_exp_time
+from database.database import add_admin, add_user, del_admin, del_user, full_adminbase, full_userbase, gen_new_count, get_clicks, inc_count, new_link, present_admin, present_hash, present_user
 
 
 
@@ -151,6 +155,22 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
+
+@Bot.on_message(filters.command('ch2l') & filters.private)
+async def gen_link_encoded(client: Bot, message: Message):
+    try:
+        hash = await client.ask(text="Enter the code here... \n /cancel to cancel the operation",chat_id = message.from_user.id, timeout=60)
+    except Exception as e:
+        print(e)
+        await hash.reply(f"ꜱᴏᴍᴇ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ⚠️{e}")
+        return
+    if hash.text == "/cancel":
+        await hash.reply("ᴄᴀɴᴄᴇʟʟᴇᴅ!")
+        return
+    link = f"https://t.me/{client.username}?start={hash.text}"
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("➡️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ", url=link)]])
+    await hash.reply_text(f"<b>🧑‍💻 ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ɢᴇɴᴇʀᴀᴛᴇᴅ ʟɪɴᴋ", quote=True, reply_markup=reply_markup)
+    return
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
