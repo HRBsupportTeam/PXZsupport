@@ -63,7 +63,7 @@ class Bot(Client):
                 sys.exit()
         if FORCE_SUB_CHANNEL3:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL2)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL3)).invite_link
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL3)).invite_link
