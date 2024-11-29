@@ -11,6 +11,7 @@ from datetime import datetime
 
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, CHANNEL_ID, PORT
 
+
 name ="""
  BY HRBsupport
 """
@@ -62,6 +63,8 @@ class Bot(Client):
                 self.LOGGER(__name__).info("\nʙᴏᴛ ꜱᴛᴏᴘᴘᴇᴅ. ᴊᴏɪɴ https://t.me/HRBsupport ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ")
                 sys.exit()
         
+        
+       
      
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
