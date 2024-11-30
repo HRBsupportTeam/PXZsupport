@@ -42,6 +42,22 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             )
         )
 
+    elif data == "update":
+        await query.message.edit_text(
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nUntuk update selanjutnya bisa join channel Support team\n\n For further updates, you can join the Support team channel\n\n 如需进一步更新，您可以加入支持团队频道</blockquote>",
+            disable_web_page_preview=True,
+            reply_markup = InlineKeyboardMarkup(
+                [   
+                    [
+                        InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/HRBsupport_official')],
+                
+                    [
+                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    ]
+                ]
+            )
+        )
+
     if data == "developer":
         await query.message.edit_text(
             text = f"<blockquote><b> ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ʜʀʙᴛᴇᴀᴍ</a>\nꜱᴜᴘᴘᴏʀᴛ : <a href='https://t.me/HRBsupport'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ</a>\nꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ : <a href='https://t.me/HRBsupport_official'>ʜʀʙᴛᴇᴀᴍ ꜱᴜᴘᴘᴏʀᴛ ᴜᴘᴅᴀᴛᴇ</a>\nꜱᴛᴏʀᴇ : <a href='https://t.me/HRBstore_official'>ʜʀʙꜱᴛᴏʀᴇ </a></b></blockquote>",
