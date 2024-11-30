@@ -1,6 +1,6 @@
 import os
 import asyncio
-from pyrogram import Client, filters, version
+from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
@@ -9,6 +9,7 @@ from bot import Bot
 from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
+
 
 
 
@@ -81,11 +82,9 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🪪 ᴀʙᴏᴜᴛ", callback_data="developer")],
-                    [InlineKeyboardButton("⚙️ ᴍᴇɴᴜ", callback_data = "menu"),
-                    
-                    InlineKeyboardButton("🎁 ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
-                [InlineKeyboardButton('📣 ᴜᴘᴅᴀᴛᴇ ', url='https://t.me/HRBsupport_official')]
+                [
+                    InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
+                 InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")]
                 
             ]
                 )
@@ -122,8 +121,9 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2)
-        ]
            
+            
+        ]
     ]
     try:
         buttons.append(
@@ -149,8 +149,6 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
-
-
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
@@ -203,4 +201,4 @@ async def send_text(client: Bot, message: Message):
         msg = await message.reply(REPLY_ERROR)
         await asyncio.sleep(8)
         await msg.delete()
-            
+        
