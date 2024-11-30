@@ -84,7 +84,8 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "developer"),
-                 InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")]
+                 InlineKeyboardButton("🗞️ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ", callback_data="update")],
+                   [ InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")],
                 
             ]
                 )
@@ -121,8 +122,7 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2)],
-        [   InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
-            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink4)],
+        [   InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3)],
            
             
         
