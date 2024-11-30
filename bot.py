@@ -75,7 +75,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"ᴘʟᴇᴀꜱᴇ ᴅᴏᴜʙʟᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ FORCE_SUB_CHANNEL3 ᴠᴀʟᴜᴇ ᴀɴᴅ ᴍᴀᴋᴇ ꜱᴜʀᴇ ʙᴏᴛ ɪꜱ ᴀᴅᴍɪɴ ɪɴ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ɪɴᴠɪᴛᴇ ᴜꜱᴇʀꜱ ᴠɪᴀ ʟɪɴᴋ ᴘᴇʀᴍɪꜱꜱɪᴏɴ, ᴄᴜʀʀᴇɴᴛ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ ᴠᴀʟᴜᴇ: {FORCE_SUB_CHANNEL3}")
                 self.LOGGER(__name__).info("\nʙᴏᴛ ꜱᴛᴏᴘᴘᴇᴅ. ᴊᴏɪɴ https://t.me/HRBsupport ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ")
                 sys.exit()
-        if FORCE_SUB_CHANNEL2:
+        if FORCE_SUB_CHANNEL4:
             try:
                 link = (await self.get_chat(FORCE_SUB_CHANNEL4)).invite_link
                 if not link:
