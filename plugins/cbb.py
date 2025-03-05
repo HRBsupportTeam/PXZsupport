@@ -71,8 +71,7 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
 [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HonorsSupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
-                ]
-            )
+                ])
         )
 
     elif data == "donate":
