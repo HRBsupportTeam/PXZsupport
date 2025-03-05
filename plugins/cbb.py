@@ -33,7 +33,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [   
                     [
                         InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
-                InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029Vaj27FHLo4hWYvLaUM00')
+                InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029VayADxyISTkIw9MPGs0i')
                     ],
                     [
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
@@ -64,9 +64,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
            disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 1', url='https://t.me/dammingyu'),
-                    InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ 2', url='https://t.me/Honorsteam')],
-                   [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HRBsupport')],
+                    [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ¹', url='https://t.me/dammingyu'),
+                    InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ²', url='https://t.me/Honorsteam')],
+                   [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ¹ ', url='https://t.me/HRBsupport'),
+[ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ² ', url='https://t.me/HonorsSupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
                 ]
@@ -81,10 +82,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
               [  InlineKeyboardButton('🧾 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
           ],
-                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://t.me/PXZsub_bot?start=Z2V0LTE5MjE1MjcwODc1MDY5MDg'),
+                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url=https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
-                [  InlineKeyboardButton('🧾 ᴀʟɪᴘᴀʏ', url='https://t.me/PXZsub_bot?start=Z2V0LTE3NjcyNDM4OTA2OTk3ODQ')],
+                [  InlineKeyboardButton('🧾 ᴀʟɪᴘᴀʏ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsSupport')],
                 
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
@@ -93,12 +94,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     
     elif data == "premium":
         await query.message.edit_text(
-            text = f"<b>ʟɪꜱᴛ ᴛᴏ ʙᴇ ᴘʀᴇᴍɪᴜᴍ ᴏꜰ ᴘxᴢᴠɪᴘ\n<blockquote>100 ᴠɪᴅᴇᴏ 5ᴋ\n200 ᴠɪᴅᴇᴏ 10ᴋ\n300 ᴠɪᴅᴇᴏ 15ᴋ\n400 ᴠɪᴅᴇᴏ 20ᴋ\n500 ᴠɪᴅᴇᴏ 25ᴋ\n600 ᴠɪᴅᴇᴏ 30ᴋ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ʙᴜʏ ᴠɪᴘ, ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ</blockquote></b>",
+            text = f"<b>ʟɪꜱᴛ ᴛᴏ ʙᴇ ᴘʀᴇᴍɪᴜᴍ\nʜᴀʀɢᴀ ᴠɪᴘ ᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ʙᴇʀʙᴇᴅᴀ ʜᴀʀɢᴀ\nʀᴀɴᴅᴏᴍ ᴠɪᴘ : 5k\n ᴠᴋɢ ᴠɪᴘ : 5k\v ꜱᴇᴇɢᴀꜱᴍ ᴠɪᴘ : 5k\nᴘɪʟɪʜ ᴜɴᴛᴜᴋ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ꜱᴇᴄᴀʀᴀ ʀᴇꜱᴍɪ</b>",
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton('🔓 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🔓 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')],
-                [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/pxzstore_team')],
+[InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg')],
+                [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/HonorsTeamBot')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
         )
@@ -106,7 +108,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = f"<b>ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴘʀᴏᴍᴏᴛɪᴏɴ ᴠɪᴅᴇᴏ/ᴘʜᴏᴛᴏ/ᴇᴛᴄ ᴄᴏɴᴛᴀᴄᴛ ꜱᴛᴏʀᴇ ᴛᴇᴀᴍ👇</b>",  disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('🤖 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/pxzstore_team'),
+                [InlineKeyboardButton('🤖 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/HonorsTeamBot'),
                 InlineKeyboardButton('📤 ᴜᴘʟᴏᴀᴅᴇᴅ', url='https://t.me/+U3RYX-jKJTxjYzk1')],
                 [
                 InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
