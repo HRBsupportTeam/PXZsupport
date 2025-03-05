@@ -86,6 +86,7 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
                 [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.imgur.com/bfWQCdM.jpeg'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
+[  InlineKeyboardButton('🧾 ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsRobot')],
                 
                 
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
@@ -95,7 +96,7 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
     
     elif data == "premium":
         await query.message.edit_text(
-            text = f"<b>ʟɪꜱᴛ ᴛᴏ ʙᴇ ᴘʀᴇᴍɪᴜᴍ ᴏꜰ ᴘxᴢᴠɪᴘ\n<blockquote>100 ᴠɪᴅᴇᴏ 5ᴋ\n200 ᴠɪᴅᴇᴏ 10ᴋ\n300 ᴠɪᴅᴇᴏ 15ᴋ\n400 ᴠɪᴅᴇᴏ 20ᴋ\n500 ᴠɪᴅᴇᴏ 25ᴋ\n600 ᴠɪᴅᴇᴏ 30ᴋ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ʙᴜʏ ᴠɪᴘ, ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ</blockquote></b>",
+            text = f"<b>ʟɪꜱᴛ ᴛᴏ ʙᴇ ᴘʀᴇᴍɪᴜᴍ\n<blockquote>100 ᴠɪᴅᴇᴏ 5ᴋ\n200 ᴠɪᴅᴇᴏ 10ᴋ\n300 ᴠɪᴅᴇᴏ 15ᴋ\n400 ᴠɪᴅᴇᴏ 20ᴋ\n500 ᴠɪᴅᴇᴏ 25ᴋ\n600 ᴠɪᴅᴇᴏ 30ᴋ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ʙᴜʏ ᴠɪᴘ, ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ</blockquote></b>",
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton('🔓 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
