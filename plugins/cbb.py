@@ -83,7 +83,7 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
               [  InlineKeyboardButton('🧾 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
           ],
-                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.imgur.com/bfWQCdM.jpeg'),
+                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
                 [  InlineKeyboardButton('🧾 ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsTeamBot')],
