@@ -82,7 +82,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
               [  InlineKeyboardButton('🧾 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
           ],
-                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url=https://t.me/HonorsRobot'),
+                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://t.me/HonorsRobot'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
                 [  InlineKeyboardButton('🧾 ᴀʟɪᴘᴀʏ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsSupport')],
