@@ -70,9 +70,28 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
                    [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HRBsupport'),
 [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HonorsSupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
+
+              ]
+            )
+        )
+
+    elif data == "donate":
+        await query.message.edit_text(
+            text = f"<b>ᴅᴏɴᴀᴛᴇ - ʜʀʙꜰᴀᴍɪʟʏ</b>\nᴊɪᴋᴀ ᴋᴀʟɪᴀɴ ꜱᴜᴋᴀ ꜱᴀᴍᴀ ᴠɪᴅᴇᴏ ʏᴀɴɢ ᴋᴀᴍɪ ʙᴀɢɪᴋᴀɴ ꜱᴇᴄᴀʀᴀ ɢʀᴀᴛɪꜱ/ʙᴀʏᴀʀᴀɴ, ɪɴɢɪɴ ʙᴇʀʙᴀɢɪ (ᴅᴏɴᴀꜱɪ) ᴋᴇᴘᴀᴅᴀ ᴘxᴢᴛᴇᴀᴍ? ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴠɪᴀ ᴅᴏɴᴀꜱɪ\n ɪꜰ ʏᴏᴜ ʟɪᴋᴇ ᴛʜᴇ ᴠɪᴅᴇᴏꜱ ᴡᴇ ꜱʜᴀʀᴇ ꜰᴏʀ ꜰʀᴇᴇ/ᴘᴀɪᴅ, ᴡᴀɴᴛ ᴛᴏ ꜱʜᴀʀᴇ (ᴅᴏɴᴀᴛᴇ) ᴛᴏ ᴘxᴢᴛᴇᴀᴍ? ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴠɪᴀ ᴅᴏɴᴀᴛɪᴏɴ",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
+              [  InlineKeyboardButton('🧾 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
+                InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
+          ],
+                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg'),
+                InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
+          ],
+                [  InlineKeyboardButton('🧾 ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsTeamBot')],
                 
+                [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
-            ])            
+            ]
+          )            
         )
     
     elif data == "premium":
