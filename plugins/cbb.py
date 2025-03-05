@@ -67,11 +67,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     [InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ¹', url='https://t.me/dammingyu'),
                     InlineKeyboardButton('🛃 ᴅᴇᴠᴇʟᴏᴘᴇʀ²', url='https://t.me/Honorsteam')],
                    [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ¹ ', url='https://t.me/HRBsupport'),
-[ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ² ', url='https://t.me/HonorsSupport')],
+                    InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ² ', url='https://t.me/HonorsSupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
-                ]
-            )
+                  ])
         )
 
     elif data == "donate":
@@ -82,7 +81,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
               [  InlineKeyboardButton('🧾 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🧾 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')
           ],
-                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://t.me/HonorsRobot'),
+                [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
                 [  InlineKeyboardButton('🧾 ᴀʟɪᴘᴀʏ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsSupport')],
@@ -99,7 +98,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton('🔓 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
                 InlineKeyboardButton('🔓 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')],
-[InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='https://t.me/HonorsRobot')],
+                [InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg')],
                 [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/HonorsTeamBot')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
