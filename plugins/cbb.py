@@ -71,7 +71,8 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
 [ InlineKeyboardButton('🛂 ꜱᴜᴘᴘᴏʀᴛ ', url='https://t.me/HonorsSupport')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
-                ])
+                                ]
+            )
         )
 
     elif data == "donate":
@@ -85,8 +86,7 @@ InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/Honor
                 [  InlineKeyboardButton('🧾 ᴅᴀɴᴀ', url='https://i.imgur.com/bfWQCdM.jpeg'),
                 InlineKeyboardButton('🧾 ᴛʀᴀᴋᴛᴇᴇʀ', url='https://trakteer.id/hrbofficial/tip')
           ],
-[  InlineKeyboardButton('🧾 ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsRobot')],
-                
+                [  InlineKeyboardButton('🧾 ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ', url='https://t.me/HonorsTeamBot')],
                 
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
                 
