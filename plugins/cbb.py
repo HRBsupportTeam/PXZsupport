@@ -112,11 +112,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = f"<b>ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ\nɪɴᴅᴏɴᴇꜱɪᴀɴ\nᴇɴɢʟɪꜱʜ\nᴄʜɪɴᴀ\nᴊᴀᴘᴀɴ\nᴋᴏʀᴇᴀ</b>",disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('🇮🇩ɪɴᴅᴏɴᴇꜱɪᴀ', callback_data = 'menu'),
-                InlineKeyboardButton('🔓 ᴘᴀʏᴘᴀʟ', url='menuen')],
-                [InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='menujp'),
-                InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='menuch')],
-                [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='menukr')],
+                [InlineKeyboardButton('🇮🇩ɪɴᴅᴏɴᴇꜱɪᴀ', callback_data = "menu"),
+                InlineKeyboardButton('🗺️ ᴇɴɢʟɪꜱʜ', callback_data="menuen")],
+                [InlineKeyboardButton('🇯🇵 ᴊᴀᴘᴀɴ', callback_data="menujp"),
+                InlineKeyboardButton('🇨🇳 ᴄʜɪɴᴀ', callback_data="menuch")],
+                [InlineKeyboardButton('🇰🇷 ᴋᴏʀᴇᴀ', callback_data="menukr")],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
         )
