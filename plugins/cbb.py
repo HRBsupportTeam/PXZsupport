@@ -91,16 +91,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             ])            
         )
 
-                elif data == "aboutbot":
+    elif data == "aboutbot":
         await query.message.edit_text(
-            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nꜰᴏʟʟᴏᴡ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ</blockquote>",
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\ᴜɴᴛᴜᴋ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ ᴋᴀᴍɪ\nꜱɪʟᴀʜᴋᴀɴ ᴛᴜʟɪꜱ ꜱᴇꜱᴜᴀɪ ᴄᴏᴍᴍᴀɴᴅ\n/id : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɪᴅ ᴀᴄᴄᴏᴜɴᴛ</blockquote>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
-                    [
-                        InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
-                InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029VayADxyISTkIw9MPGs0i')
-                    ],
+                    
                     [
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
                     ]
