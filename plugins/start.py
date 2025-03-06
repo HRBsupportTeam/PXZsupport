@@ -82,10 +82,11 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "developer"),
+                [ InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")],
+                [InlineKeyboardButton("🔒 ʟᴀɴɢᴜᴀɢᴇꜱ ʟᴏᴄᴋᴇᴅ ", callback_data="languages")],
+                    [InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "developer"),
                  InlineKeyboardButton("🗞️ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ", callback_data="update")],
-                   [ InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")],
+            ],
                 
             ]
                 )
