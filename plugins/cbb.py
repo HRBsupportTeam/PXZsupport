@@ -90,16 +90,33 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 
             ])            
         )
-    
-    elif data == "premium":
+
+                elif data == "media":
         await query.message.edit_text(
-            text = f"<b>ʟɪꜱᴛ ᴛᴏ ʙᴇ ᴘʀᴇᴍɪᴜᴍ\nʜᴀʀɢᴀ ᴠɪᴘ ᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ʙᴇʀʙᴇᴅᴀ ʜᴀʀɢᴀ\nʀᴀɴᴅᴏᴍ ᴠɪᴘ : 5k\n ᴠᴋɢ ᴠɪᴘ : 5k\v ꜱᴇᴇɢᴀꜱᴍ ᴠɪᴘ : 5k\nᴘɪʟɪʜ ᴜɴᴛᴜᴋ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ꜱᴇᴄᴀʀᴀ ʀᴇꜱᴍɪ</b>",
-            disable_web_page_preview = True,
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nꜰᴏʟʟᴏᴡ ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ ᴏꜰꜰɪᴄɪᴀʟ</blockquote>",
+            disable_web_page_preview=True,
+            reply_markup = InlineKeyboardMarkup(
+                [   
+                    [
+                        InlineKeyboardButton('📱 ɪɴꜱᴛᴀɢʀᴀᴍ', url='https://Instagram.com/pxz_official'),
+                InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029VayADxyISTkIw9MPGs0i')
+                    ],
+                    [
+                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    ]
+                ]
+            )
+    )
+    
+    elif data == "languages":
+        await query.message.edit_text(
+            text = f"<b>ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ\nɪɴᴅᴏɴᴇꜱɪᴀɴ\nᴇɴɢʟɪꜱʜ\nᴄʜɪɴᴀ\nᴊᴀᴘᴀɴ\nᴋᴏʀᴇᴀ</b>",disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('🔓 ꜱᴀᴡᴇʀɪᴀ', url='https://saweria.co/PXZsupport'),
-                InlineKeyboardButton('🔓 ᴘᴀʏᴘᴀʟ', url='https://paypal.me/PEXLAND')],
-                [InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='https://i.postimg.cc/9M0XjWKX/qr-ID1024361924490-24-02-25-174033686-1740336867013.jpg')],
-                [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/HonorsTeamBot')],
+                [InlineKeyboardButton('🇮🇩ɪɴᴅᴏɴᴇꜱɪᴀ', callback_data = 'menu'),
+                InlineKeyboardButton('🔓 ᴘᴀʏᴘᴀʟ', url='menuen')],
+                [InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='menujp'),
+                InlineKeyboardButton('🔓 ᴅᴀɴᴀ', url='menuch')],
+                [InlineKeyboardButton('🛂 ᴄᴏɴᴛᴀᴄᴛ', url='menukr')],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
         )
