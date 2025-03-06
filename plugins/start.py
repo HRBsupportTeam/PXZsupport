@@ -85,7 +85,7 @@ async def start_command(client: Client, message: Message):
                 [ InlineKeyboardButton("⚙️ ᴍᴇɴᴜ ", callback_data="menu")],
                 [InlineKeyboardButton("🔒 ʟᴀɴɢᴜᴀɢᴇꜱ ʟᴏᴄᴋᴇᴅ ", callback_data="languages")],
                     [InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "developer"),
-                 InlineKeyboardButton("🗞️ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ", callback_data="update")],
+                 InlineKeyboardButton("🗞️ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ", callback_data="update")
             ],
                 
             ]
