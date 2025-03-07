@@ -36,7 +36,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 InlineKeyboardButton('📲 ᴡʜᴀᴛꜱᴀᴘᴘ', url='https://whatsapp.com/channel/0029VayADxyISTkIw9MPGs0i')
                     ],
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
                     ]
                 ]
             )
@@ -44,15 +44,16 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "update":
         await query.message.edit_text(
-            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nUntuk update selanjutnya bisa join channel Support team\n\n For further updates, you can join the Support team channel\n\n 如需进一步更新，您可以加入支持团队频道</blockquote>",
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nUntuk update selanjutnya bisa join channel Support team\n\nFor further updates, you can join the Support team channel\n\n如需进一步更新，您可以加入支持团队频道\n\n추가 업데이트 사항은 지원팀 채널에 가입하시면 됩하세요</blockquote>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://t.me/HRBsupport_official')],
+                        InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ¹', url='https://t.me/HRBsupport_official'),
+                    InlineKeyboardButton('🗞️ ᴄʟɪᴄᴋ ʜᴇʀᴇ²', url='https://t.me/HonorsSupport')],
                 
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
                     ]
                 ]
             )
@@ -99,7 +100,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [   
                     
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
                     ]
                 ]
             )
@@ -109,12 +110,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = f"<b>ᴘʟᴇᴀꜱᴇ ꜱᴇʟᴇᴄᴛ ᴀ ʟᴀɴɢᴜᴀɢᴇ ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ\nꜱᴏᴍᴇ ʟᴀɴɢᴜᴀɢᴇꜱ ᴀʀᴇ ꜱᴛɪʟʟ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ</b>",disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('🇮🇩 ɪɴᴅᴏɴᴇꜱɪᴀ', callback_data = "menu"),
-                InlineKeyboardButton('🗺️ ᴇɴɢʟɪꜱʜ', callback_data="menuen")],
-                [InlineKeyboardButton('🇯🇵 ᴊᴀᴘᴀɴ', callback_data="menujp"),
-                InlineKeyboardButton('🇨🇳 ᴄʜɪɴᴀ', callback_data="menuch")],
-                [InlineKeyboardButton('🇰🇷 ᴋᴏʀᴇᴀ', callback_data="menukr"),
-InlineKeyboardButton('🇹🇭 ᴛʜᴀɪ', callback_data="menuth")],
+                [InlineKeyboardButton('🇮🇩 ɪɴᴅᴏɴᴇꜱɪᴀ🔓', callback_data = "menu"),
+                InlineKeyboardButton('🗺️ ᴇɴɢʟɪꜱʜ🔒', callback_data="menuen")],
+                [InlineKeyboardButton('🇯🇵 ᴊᴀᴘᴀɴ🔒', callback_data="menujp"),
+                InlineKeyboardButton('🇨🇳 ᴄʜɪɴᴀ🔒', callback_data="menuch")],
+                [InlineKeyboardButton('🇰🇷 ᴋᴏʀᴇᴀ🔒', callback_data="menukr"),
+                InlineKeyboardButton('🇹🇭 ᴛʜᴀɪ🔒', callback_data="menuth")],
                 [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
         )
@@ -128,6 +129,22 @@ InlineKeyboardButton('🇹🇭 ᴛʜᴀɪ', callback_data="menuth")],
                 InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
             ])            
     )
+
+                
+
+    elif data == "premium":
+        await query.message.edit_text(
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ ꜰᴏʀ ᴘʀɪᴄᴇ ɪꜱ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ, ꜱᴛᴀʏ ᴛᴜɴᴇ ꜰᴏʀ ᴍᴏʀᴇ</blockquote>",
+            disable_web_page_preview=True,
+            reply_markup = InlineKeyboardMarkup(
+                [   
+                    [InlineKeyboardButton("🔧 ᴄʜᴇᴄᴋ ꜰᴏʀ ᴜᴘᴅᴀᴛᴇ", callback_data = "update")],
+                    [
+                        InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
+                    ]
+                ]
+            )
+        )
         
     elif data == "close":
         await query.message.delete()
