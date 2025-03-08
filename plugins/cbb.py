@@ -16,7 +16,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [
             [InlineKeyboardButton("💰 ᴅᴏɴᴀᴛᴇ", callback_data="donate"),
               InlineKeyboardButton("🔐 ᴠɪᴘ ", callback_data="premium"),
-              InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data="promotion",)],
+              InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data="promotion")],
                     [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ ', url='https://px-z.blogspot.com')],
                    [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close"),
                    InlineKeyboardButton("📲 ꜰᴏʟʟᴏᴡ ᴜꜱ ", callback_data="media")]
