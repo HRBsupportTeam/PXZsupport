@@ -14,12 +14,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📲ꜰᴏʟʟᴏᴡ ᴜꜱ ", callback_data="media")
-                 ],
-              [InlineKeyboardButton("🔐 ᴘʀᴇᴍɪᴜᴍ ᴠɪᴘ ", callback_data="premium"),
+            [InlineKeyboardButton("💰 ᴅᴏɴᴀᴛᴇ", callback_data="donate"),
+              InlineKeyboardButton("🔐 ᴠɪᴘ ", callback_data="premium"),
               InlineKeyboardButton("💰 ꜱᴛᴏʀᴇ ", callback_data="promotion",)],
                     [InlineKeyboardButton('🌐 ᴡᴇʙꜱɪᴛᴇ ', url='https://px-z.blogspot.com')],
-                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close")]
+                   [InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close"),
+                   InlineKeyboardButton("📲 ꜰᴏʟʟᴏᴡ ᴜꜱ ", callback_data="media")]
                 
                 ]
             )
@@ -94,7 +94,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "aboutbot":
         await query.message.edit_text(
-            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\ᴜɴᴛᴜᴋ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ ᴋᴀᴍɪ\nꜱɪʟᴀʜᴋᴀɴ ᴛᴜʟɪꜱ ꜱᴇꜱᴜᴀɪ ᴄᴏᴍᴍᴀɴᴅ\n/id : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɪᴅ ᴀᴄᴄᴏᴜɴᴛ</blockquote>",
+            text=f"<blockquote>👋 hello user : {query.from_user.username}\n\nᴜɴᴛᴜᴋ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ ᴋᴀᴍɪ\nꜱɪʟᴀʜᴋᴀɴ ᴛᴜʟɪꜱ ꜱᴇꜱᴜᴀɪ ᴄᴏᴍᴍᴀɴᴅ\n/id : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜɴᴄᴜʟᴋᴀɴ ɪᴅ ᴀᴄᴄᴏᴜɴᴛ</blockquote>",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
