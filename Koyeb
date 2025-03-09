@@ -1,0 +1,8 @@
+koyeb app init sky \
+    --docker koyeb/demo \
+    --autoscaling-concurrent-requests 20 \
+    --min-scale 2 \
+    --max-scale 10 \
+    --regions fra,was,sin
+
+koyeb service update sky/sky --autoscaling-requests-response-time 300
